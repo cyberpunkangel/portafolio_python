@@ -1,0 +1,553 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de
+<span class="subheading">Currículo</span>
+</h1>
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1 col-md-12 position-relative">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="" type="button" class="btn btn-primary" data-toggle="modal">
+        <a href="#" class="play-button cursor" data-toggle="modal" data-target="#exampleModal"></a>
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">¿Quién soy?</h2>   
+        <p>Apasionado en tecnologías emergentes, soy un hombre autodidacta, con cualidades como atención al detalle, creatividad, cordialidad y procuro encontrar soluciones que permitan hacer del trabajo en equipo una tarea automatizada y precisa.</p>
+        <p>Tengo fuertes habilidades informáticas, de programación y analíticas.</p>
+        
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Presentación</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe id="iframeVideo" class="embed-responsive-item" src="https://mega.nz/embed/sJFB3I5A#7AIR6DRsvY9pbdZe7CLgPLHJATEGdu9yRwPorL_Gip8" type="video/mp4"></iframe>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Contenido -->  
+<h2 class="section-heading">Experiencia</h2>
+
+<!-- Sliders -->  
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        
+        <h3 class="section-heading">HITSS SOLUTIONS(Oct 2019 – Jul 2022). Analista de sistemas.<br>
+            Proyecto: IVR Menú Inteligente Banortel:</br></h3>
+        <ul>
+            <li>Documentaci&oacute;n para Mantenimientos y proyectos en el IVR Men&uacute; Inteligente de Banortel:<br />
+            <div class="columnas">
+            <ul>
+            <li>An&aacute;lisis T&eacute;cnicos.</li>
+            <li>Casos de Uso.</li>
+            <li>Bocetos de pantalla.</li>
+            <li>Diagramas UML.</li>
+            <li>Dise&ntilde;os Detallados</li>
+            <li>Modelos de datos.</li>
+            <li>Matrices y evidencias de pruebas unitarias</li>
+            </ul>
+            </div>
+            </li>
+            <li>Sesiones de entendimiento y de asistencia en pruebas con usuario.</li>
+            <li>Mantenimientos con las siguientes tecnolog&iacute;as: C# asp .net, Eclipse, Visual Studio 2013, Composer 8+, PLSQL (Alta de tablas, vistas, stored procedures, secuencias, inserts, updates, rollbacks), Control de versiones TFS, SOAP UI, Quick Macros.</li>
+            <li>Gesti&oacute;n del pase de mantenimientos y proyectos entre ambientes Desarrollo, QA, Producci&oacute;n.</li>
+            <li>Release Manager (Coordinaci&oacute;n de 4 equipos de trabajo para el despliegue de mantenimientos en producci&oacute;n).</li>
+            <li>Manuales de procedimientos y Capacitaci&oacute;n.</li>
+            <li>Soluci&oacute;n de incidencias productivas en menos de 2 d&iacute;as.</li>
+        </ul>
+    
+    
+    
+    </div>
+
+
+    <div class="swiper-slide">
+        
+        <h3 class="section-heading">TOWA SOFWARE(Oct 2018 – Ago 2019). Analista funcional.</h3>
+        <ul>
+            <li><strong>Proyectos:</strong><br/>
+            <ul>
+            <li>Aplicativo web con diversos m&oacute;dulos bancarios.</li>
+            <li>Aplicativo para la administraci&oacute;n de alertas de cajeros de banca AFIRME.</li>
+            </ul>
+            </li>
+            <li><strong>Actividades:</strong> <br/>
+            <ul>
+            <li>Documentaci&oacute;n (An&aacute;lisis funcional, bocetos de pantalla, bocetos de archivo).</li>
+            <li>Pruebas unitarias.</li>
+            </ul>
+            </li>
+            <li><strong>Herramientas:</strong> Balsamiq Mockups para presentaci&oacute;n de propuestas de pantalla. Microsoft teams para sesiones de entendimiento con usuario.Slack para comunicaci&oacute;n interna, Drive para alojamiento de archivos compartidos, MS Office para documentaci&oacute;n y evidencia de pruebas, HTML para propuestas de pantalla, Outlook</li>
+        </ul> 
+
+    </div>
+
+
+    <div class="swiper-slide">
+        <h3 class="section-heading">CASA GARZA DE MONTERREY S.A. DE C.V.<br>
+            -Encargado de Sistemas y analista de datos - (Ago 2017 – Oct 2018).</br>
+            -Auxiliar de compras (Nov 2016 – Jun 2017).
+        </h3>
+        <ul>
+            <li>Desarrollo de objetivos para fuerza de ventas.</li>
+            <li>Reportes y mantenimiento de KPI&acute;s para Direcci&oacute;n, Ventas, Compras y Almac&eacute;n.</li>
+            <li>Desarrollo de macros VBA y Quick Macros.</li>
+            <li>Web scrapping.</li>
+            <li>Implementaci&oacute;n y administraci&oacute;n de sistema Kanban para requisici&oacute;n de compra (Fill Rate &gt; 93%).</li>
+            <li>Administraci&oacute;n y mantenimiento del ERP de la empresa (Cargas y actualizaciones masivas de registros en base de datos, administraci&oacute;n de roles y perfiles de usuario, aseguramiento de la operaci&oacute;n, etc.).</li>
+            <li>Administraci&oacute;n y mantenimiento de la p&aacute;gina web.</li>
+            <li>Dise&ntilde;o gr&aacute;fico y campa&ntilde;as de ventas.</li>
+            <li>Soporte t&eacute;cnico para 32 clientes internos.</li>
+            <li>Video tutoriales y capacitaciones.</li>
+            <li>Seguridad y respaldos del servidor.</li>
+        </ul>
+    </div>
+</div>
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>
+
+<!-- If we need scrollbar -->
+<div class="swiper-scrollbar"></div>
+</div>
+  
+
+<!-- Certificados -->
+<div style="margin-top: 30px;">
+    <h2 class="section-heading">Certificaciones</h2> 
+</div>
+
+<table class="table table-striped demo" style="width:100%;">
+    <thead>
+        <tr>
+            <th class="w-20">Clasificación</th>
+            <th class="w-50">Curso</th>
+            <th class="w-30">Certificado o comprobante</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Datos</td>
+            <td>Domina DAX | De Cero a Maestro [2023]</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-e6b941d9-ec9b-43ae-9784-1045abe50821/"><img src="https://img.icons8.com/?size=32&id=qYfwpsRXEcpc&format=png"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Datos</td>
+            <td>Curso Power BI – Análisis de Datos y Business Intelligence</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-c3fb34c7-7f32-4036-a2ae-16cf532b2d21/?fbclid=IwAR2zaLlOCobg9CeAdciSy_12Uq0ox2yer6P3fCsxZ7Fx0HoZKS3oufsuxqA"><img src="https://img.icons8.com/?size=32&id=qYfwpsRXEcpc&format=png"></a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Datos</td>
+            <td>QlikView Developer: Certificado Desarrollador QlikView!</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-bb782db2-948e-4439-86ed-96b7f2bd5cb6/"><img src="https://cdn.icon-icons.com/icons2/2107/PNG/32/file_type_qlikview_icon_130217.png"></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Datos</td>
+            <td>Aprende de cero MongoDB - MongoDB Atlas - MongoDB Compass</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-bb782db2-948e-4439-86ed-96b7f2bd5cb6/"><img width="32" height="32" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_mongo_icon_130383.png" alt="mongo"/></a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Datos</td>
+            <td>DBA PostgreSQL</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-20fc8f85-b73d-4696-b73b-2a51a103d897/?fbclid=IwAR016ATQFIShv6VJEFIWQsRDojRKjn_5R4eXDU2H5TNLXa1TqIj1SZep5qc"><img width="32" height="32" src="https://img.icons8.com/color/32/postgreesql.png" alt="postgreesql"/></a>
+            </td>
+        </tr>
+
+        
+        <tr>
+            <td>Datos</td>
+            <td>Diagrama y crea tus bases de datos. Domina SQL FACILMENTE!</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-WSVOX6GZ/"><img width="32" height="32" src="https://img.icons8.com/color/32/mysql-logo.png" alt="mysql-logo"/></a>
+            </td>
+        </tr>
+
+        
+        <tr>
+            <td>Datos</td>
+            <td>PL/SQL de ORACLE en Español</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-4a69dfba-ce9a-452b-bc40-3eed9d8e4ab2/"><img width="32" height="32" src="https://img.icons8.com/color/32/oracle-logo.png" alt="oracle-logo"/></a>
+            </td>
+        </tr>
+
+        
+        <tr>
+            <td>Diseño de software</td>
+            <td>UML - DESDE CERO, 5 DIAGRAMAS BÁSICOS- CASO DE ESTUDIO</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-5NSCY9WC/"><img width="32" height="32" src="https://img.icons8.com/wired/32/flow-chart.png" alt="flow-chart"/></a>
+            </td>
+        </tr>
+
+        
+        <tr>
+            <td>Diseño de software</td>
+            <td>Wireframing with Balsamiq Mockups</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-NUP331CK/"><img src="https://cdn.icon-icons.com/icons2/3053/PNG/32/balsamiq_mockups_macos_bigsur_icon_190357.png"></a>
+            </td>
+        </tr>
+
+        
+        <tr>
+            <td>Diseño Gráfico</td>
+            <td>Photoshop CC | Fotografía, Retoque y Edición de Fotografías</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-a660f1a5-fcba-41d4-b4c9-bec234a94d01/?fbclid=IwAR2GCjRCDYfzL9s8KE3RB_-o3fclEz2JimaBbzUtj8NIyPUWrv8q_TvCoyg"><img width="32" height="32" src="https://img.icons8.com/color/32/adobe-photoshop--v1.png" alt="adobe-photoshop--v1"/></a>
+            </td>
+        </tr>
+
+        
+        <tr>
+            <td>ERP</td>
+            <td>Master en SAP ABAP y POO</td>
+            <td>
+                <a href="http://www.cvosoft.com/certificaciones/sap/angel-lopez-PZ54X.html"><img width="32" height="32" src="https://img.icons8.com/color/32/sap.png" alt="sap"/></a>
+            </td>
+        </tr>
+
+        
+        <tr>
+            <td>ERP</td>
+            <td>Diplomado en SAP BASIS</td>
+            <td>
+                <a href="http://www.cvosoft.com/certificaciones/sap/angel-lopez-PZ54X.html"><img width="32" height="32" src="https://img.icons8.com/color/32/sap.png" alt="sap"/></a>
+            </td>
+        </tr>
+              
+        <tr>
+            <td>Framework</td>
+            <td>Node: De cero a experto</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-5ba929a4-7243-4515-bf6c-50270a39c51f/"><img width="32" height="32" src="https://img.icons8.com/color/32/nodejs.png" alt="nodejs"/></a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Inglés</td>
+            <td>Open English (B2)</td>
+            <td>
+                <a href="https://learningplatform.openenglish.com/certificate.html?src=aHR0cHM6Ly9vZS1hZHVsdC1jZXJ0aWZpY2F0ZXMub3BlbmVuZ2xpc2guY29tL2NlcnRpZmljYXRlLzAwMzNyMDAwMDN1YTVuMkFBQTgucG5n&fbclid=IwAR02HG6919_jAg9aiK5ujZZid1rNG3_6lSHX56RWA-BB2KFFy9AS4WJmkD0"><img width="32" height="32" src="https://www.openenglish.com/wp-content/themes/oe-wpcontent/wpbootstrap/img/oe-latam-logo.png"/></a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Inglés</td>
+            <td>Cambridge University (Linguaskill B2)</td>
+            <td>
+                <a href="https://mega.nz/file/EcEyjCCC#Tf3fQvGPLD0-emNg1mT1mctIUSOFZDQ9dLplWsOvqOc"><img width="32" height="32" src="https://www.cam.ac.uk/sites/www.cam.ac.uk/themes/fresh/images/interface/cambridge_university2.svg"/></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Metodología</td>
+            <td>Jira: Gestiona proyectos Corporativos de forma Ágil</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-cb74b2c9-1ef7-47c3-aeb8-091bfb2a326e/?fbclid=IwAR1xIvkh6-HoRQ2QrLjlfcJqtvQkDUBbkYhqONhrITBPcrrw-upxsK0i3nY"><img width="32" height="32" src="https://img.icons8.com/color/32/jira.png" alt="jira"/></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Metodología</td>
+            <td>SCRUM Práctico en Proyectos de Software</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-FBSXXLGV/"><img width="32" height="32" src="https://img.icons8.com/external-flaticons-flat-flat-icons/32/external-scrum-agile-flaticons-flat-flat-icons-6.png" alt="external-scrum-agile-flaticons-flat-flat-icons-6"/></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Programación</td>
+            <td>La Guía de Jenkins: ¡De Cero a Experto! | Mayo 2023</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-cf51cd45-9d0a-4f1d-8208-b59b43ff1224/?fbclid=IwAR0raaRNJG9ZbiNRA7z4U5RZ2kqnFs62jmrCW_9hMZpBU1VxSFk0hGksFZ0"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/32/jenkins_logo_icon_170552.png"></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Programación</td>
+            <td>Docker - Guía práctica de uso para desarrolladores</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-31df6898-57cd-4e7d-95df-fc299e310bcf/?fbclid=IwAR3XhJXSyPG35KSI8114e-P5bco65pUL2cf1n1qz0yno5C1j6NmUb684C2w"><img width="32" height="32" src="https://img.icons8.com/fluency/32/docker.png" alt="docker"/></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Programación</td>
+            <td>Master en Python: Aprender Python 3, Django, Flask y Tkinter</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-bec9b3f0-6512-4b65-b8ce-0d737f9ff34d/"><img width="32" height="32" src="https://img.icons8.com/color/32/python--v1.png" alt="python--v1"/></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Programación</td>
+            <td>ReactiveX - RxJs: De cero hasta los detalles</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-9670e3c4-7714-4bf2-a8c1-179a9a305409/"><img src="https://cdn.icon-icons.com/icons2/3914/PNG/32/reactivex_logo_icon_248689.png"></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Programación</td>
+            <td>jQuery Avanzado - 100 trucos profesionales</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-5cbbfdb4-145a-420f-a3eb-1bab47f95be3/"><img width="32" height="32" src="https://img.icons8.com/ios/32/jquery.png" alt="jquery"/></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Programación</td>
+            <td>JavaScript: de cero hasta los detalles (ES5)</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-600c5559-5ad2-4584-b1ee-e4ac0720e939/"><img width="32" height="32" src="https://img.icons8.com/color/32/javascript--v1.png" alt="javascript--v1"/></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Programación</td>
+            <td>Universidad Java: De Cero a Master +70 hrs (Java 12 update)!</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-DARFQWXZ/"><img width="32" height="32" src="https://img.icons8.com/color/32/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Programación</td>
+            <td>Curso Completo de Programación C Sharp (C#)</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-A85T2WNS/"><img width="32" height="32" src="https://img.icons8.com/color/32/c-sharp-logo.png" alt="c-sharp-logo"/></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Programación</td>
+            <td>Fundamentos de Gradle para aplicaciones Java</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-RJVRTQFI/"><img src="https://cdn.icon-icons.com/icons2/2107/PNG/32/file_type_light_gradle_icon_130462.png"></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Programación</td>
+            <td>Java Maven</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-M3US6YJS/"><img src="https://cdn.icon-icons.com/icons2/2107/PNG/32/file_type_maven_icon_130397.png"></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Programación</td>
+            <td>TypeScript: tu completa guía y manual de mano.</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-ABHN747U/"><img width="32" height="32" src="https://img.icons8.com/color/32/typescript.png" alt="typescript"/></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Programación</td>
+            <td>Git y GitHub Completo Desde Cero</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-T11DGL8L/"><img src="https://cdn.icon-icons.com/icons2/2157/PNG/32/github_git_hub_logo_icon_132878.png"></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Robotic Process Automation (RPA)</td>
+            <td>Quick Macros</td>
+            <td>
+                <a href="https://www.libreautomate.com/forum/member.php?action=profile&uid=1296"><img src="https://bitsdujourblob.blob.core.windows.net/software/icon/quick-macros.png" width="32" height="32"></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Robotic Process Automation (RPA)</td>
+            <td>Automation Anywhere - Bot Developer (A2019)</td>
+            <td>
+                <a href="https://certificates.automationanywhere.com/57eadbeb-91e8-45c7-af0c-c6d890b99aee?fbclid=IwAR34MfdkoJkXZmOryIbmFhbYiZbfjLhk5-p-ypwpGkvmsk9mEHsJpbMWVNg#gs.uoayff"><img src="https://pbs.twimg.com/profile_images/1046888625424687104/G-XuXLML_400x400.jpg" width="32" height="32"></a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Testing</td>
+            <td>Automatiza tu navegador. Selenium WebDriver con Python.</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-59049bce-b158-48ec-abef-8b90b564199d/"><img width="32" height="32" src="https://img.icons8.com/fluency/32/selenium-test-automation.png" alt="selenium-test-automation"/></a>
+            </td>
+        </tr>
+            
+        <tr>
+            <td>Testing</td>
+            <td>Software Testing de aplicaciones. Postman. Testing de API</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-2c6a88ab-de03-4524-bc07-9773a0d32288/"><img src="https://cdn.icon-icons.com/icons2/3053/PNG/32/postman_alt_macos_bigsur_icon_189814.png"></a>
+            </td>
+        </tr>
+            
+        <tr>
+            <td>Testing</td>
+            <td>Pruebas funcionales a API REST: SoapUI</td>
+            <td>
+                <a href="https://www.udemy.com/certificate/UC-60JH9OXL/"><img src="https://cdn.icon-icons.com/icons2/1381/PNG/32/soapui_93772.png"></a>
+            </td>
+        </tr>
+        
+    </tbody>
+</table> 
+
+<br></br> 
+
+<h2 class="section-heading">Otros Conocimientos</h2>
+
+<div class="columnas">
+<h3 class="section-heading">Editores de Texto y Entornos de desarrollo integrado (IDE):
+</h3>
+<ul>
+    <li>Visual Studio Code, Notepad++</li>
+    <li>Visual Studio</li>
+    <li>Eclipse</li>
+    <li>IntelliJ IDEA</li>
+    <li>PyCharm</li>
+</ul>
+
+<h3 class="section-heading">Gestión de Versiones:
+</h3>
+<ul>
+    <li>Sourstree</li>
+    <li>TFS</li>
+    <li>Harvest Workbench</li>
+</ul>
+
+<h3 class="section-heading">Administración en bases de datos:
+</h3>
+<ul>
+    <li>phpMyAdmin</li>
+    <li>TOAD for Oracle</li>
+    <li>Mongo DBCompass, Robo 3T</li>
+    <li>pgAdmin</li>
+</ul>
+
+<h3 class="section-heading">Servidores:
+</h3>
+<ul>
+    <li>Nginx</li>
+    <li>Apache Tomcat</li>
+    <li>Nodejs</li>
+    <li>WAMP, XAMPP</li>
+    </ul>
+
+
+<br></br>
+
+<h3 class="section-heading">Comunicación:
+</h3>
+<ul>
+    <li>Outlook, Gmail,</li>
+    <li>Skype, Slack, Discord.</li>
+    <li>MS Teams, Anydesk, Teamviewer.</li>
+</ul>
+
+<h3 class="section-heading">Enterprise Resource Planning (ERP´s):
+</h3>
+<ul>
+    <li>SAI (Castelec)</li>
+    <li>SAP Business One</li>
+</ul>
+
+<h3 class="section-heading">Inteligencia Artificial Conversacional y Copilots:
+</h3>
+<ul>
+    <li>ChatGPT</li>
+    <li>Perplexity AI</li>
+    <li>Open Assistant</li>
+    <li>Bito AI</li>
+    <li>Codeium</li>
+</ul>
+
+<h3 class="section-heading">Inteligencia Artificial de Imagen:
+</h3>
+<ul>
+    <li>Stable Diffussion</li>
+    <li>Midjourney</li>
+</ul>
+
+<h3 class="section-heading">Otras:
+</h3>
+<ul>
+    <li>CSS, HTML, Bootstrap</li>
+    <li>Quick Macros</li>
+    <li>ABBYY FineReader</li>
+    <li>WinMerge</li>
+    <li>Oracle VM Virtualbox (Windows, Ubuntu)</li>
+</ul>
+</div>
+
+<br></br>
+
+<!-- Botón "Ver PDF" -->
+
+<div class="centrar">
+<button type="button" class="btn btn-primary cursor" data-toggle="modal" data-target="#pdfModal">
+    Ver PDF
+  </button>
+</div>
+
+<!-- Modal del PDF -->
+<div class="modal fade" id="pdfModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="pdfModalLabel">Vista previa del PDF</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <iframe src="{% static 'core/img/Resume111.pdf' %}" width="100%" height="500"></iframe>
+    </div>
+    <div class="modal-footer">
+        <a href="{% static 'core/img/Resume111.pdf' %}" download="Resume111.pdf" class="btn btn-primary">Descargar PDF</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+    </div>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}
