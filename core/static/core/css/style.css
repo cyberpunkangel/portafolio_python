@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/css?family=VT323);
+
 .gris {
   font-family: Helvetica, Arial, sans-serif;
   background-color: rgb(230, 217, 217);
@@ -6,8 +8,6 @@
   background-color: #000000; /* Color de fondo negro */
   color: #ffffff; /* Color de texto blanco para contrastar con el fondo negro */
 }
-
-@import url(//fonts.googleapis.com/css?family=VT323);
 
 /* #app {
     font-family: 'Hack';
