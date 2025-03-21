@@ -11,25 +11,28 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 import os
-
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Cargar variables de entorno desde .env
+from dotenv import load_dotenv
+load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# OLD SECRET_KEY = 'django-insecure-w!-l0vi-%vdc!1y=v-yhh*gxgv(3q(qlq&_$6as^a$##9j(uzz'
-from .local_settings import SECRET_KEY
+SECRET_KEY = os.getenv("SECRET_KEY")
 
+if not SECRET_KEY:
+    raise ValueError("SECRET_KEY no está definida en el archivo .env")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
 
 
 # Application definition
@@ -122,6 +125,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
+if DEBUG:
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -131,3 +138,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")  #BASE_DIR / 'media'
+
+# Configuración de correo
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = "angel.lopez.formal@gmail.com"
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+# Validar que las variables de entorno se cargaron correctamente
+if not EMAIL_HOST_USER or not EMAIL_HOST_PASSWORD:
+    raise ValueError("Error: Variables de entorno de email no configuradas correctamente.")

@@ -1,3 +1,12 @@
-Pillow==5.0.0
-django==2.0.2
-django-ckeditor==5.4.0
+# Versión anterior:
+# Pillow==5.0.0 
+# django==2.0.2
+# django-ckeditor==5.4.0
+
+django
+django-ckeditor
+Pillow
+pylint
+pylint-django
+pylint-celery
+python-dotenv
