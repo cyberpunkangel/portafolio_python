@@ -1,3 +1,10 @@
+#comprimidos
+*.tar.gz
+*.tar
+
+# vscode
+settings.json
+
 # media
 *.pdf
 *.png

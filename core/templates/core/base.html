@@ -70,6 +70,7 @@
               {% block headers %}{% endblock %}
             </div>
           </div>
+          {% block analytics_stats %}{% endblock %}          
         </div>
       </div>
     </header>
@@ -79,7 +80,7 @@
       {% block content %}{% endblock %}
     </div>
 
-    {% if request.path != "/" %}<br></br>{% endif %}
+    {% comment %} {% if request.path != "/" %}<br></br>{% endif %} {% endcomment %}
     {% comment %} <br></br> {% endcomment %}
   </body>
 
@@ -162,12 +163,6 @@
             el: '.swiper-scrollbar',
           },
 
-
-
       });
     </script>
-
-
-
-
 </html>

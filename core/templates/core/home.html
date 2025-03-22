@@ -5,9 +5,19 @@
 {% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
 
 {% block headers %}
-<h1 id="app" style="font-size: 25px;"></h1>
+<h1 id="app" style="font-size: 20px; min-height: 3em;"></h1>
 <h1 style="font-size: 1px;">
     <span class="subheading">@cyberpunkangel 🤖🦾</span>
 </h1>
+{% endblock %}
 
+{% block analytics_stats %}
+<div style="position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.6); padding: 10px; border-radius: 10px; color: white;">
+  <h4>🌎 Top ciudades y países</h4>
+    <ul>
+    {% for location, count in locations %}
+        <li>{{ location }}: {{ count }}</li>
+    {% endfor %}
+    </ul>
+</div>
 {% endblock %}

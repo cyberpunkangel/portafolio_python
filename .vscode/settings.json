@@ -1,20 +1,19 @@
 {
     "editor.tabCompletion": "on",
-    "diffEditor.codeLens": true,
-    
-    "python.pythonPath": "C:\\ruta\\al\\entorno\\python.exe",   /* Adaptar esta línea */
+    "diffEditor.codeLens": true,    
     "python.linting.enabled": true,  
-    "python.linting.pylintPath": "pylint",
+    "python.linting.pylintPath": "venv/Scripts/pylint.exe",  /* Adaptar esta línea */
     "python.linting.pylintEnabled": true,
     "python.languageServer": "Pylance",
     "python.linting.pycodestyleEnabled": true, 
     "python.analysis.useImportHeuristic": true,    
     "python.linting.pycodestyleArgs": ["--ignore=E501,E226,E116"],
     "python.formatting.autopep8Args": [
-        "--max-line-length=200"
+        "--max-line-length=200",
     ],
     "python.linting.pylintArgs": [
         "--load-plugins=pylint-django",
+        "--disable=C0114,C0116",
     ],
     
 }
