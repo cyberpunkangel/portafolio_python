@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from core import views as core_views
 from portfolio import views as portfolio_views
 
@@ -27,6 +27,7 @@ urlpatterns = [
     path('portfolio/', portfolio_views.portfolio, name="portfolio"),
     path('contact/', core_views.contact, name="contact"),
     path('admin/', admin.site.urls),
+    path('analytics/', include('analytics.urls')),  # Incluye las rutas de 'analytics'
 ]
 
 if settings.DEBUG:
