@@ -44,9 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'analytics',
     'core',
     'portfolio.apps.PortfolioConfig',
-    'analytics',
 ]
 
 MIDDLEWARE = [

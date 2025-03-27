@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import pandas as pd
-from .NICAP.analisis_nicap import obtener_datos_y_graficos
+from .analisis_nicap import obtener_datos_y_graficos
 
 def analisis_nicap(request):
     tabla_html, grafico_uri = obtener_datos_y_graficos()

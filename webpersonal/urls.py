@@ -15,11 +15,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
 from core import views as core_views
 from portfolio import views as portfolio_views
 
 from django.conf import settings
+
+from analytics.NICAP import views
 
 urlpatterns = [
     path('', core_views.home, name="home"),
@@ -27,7 +29,9 @@ urlpatterns = [
     path('portfolio/', portfolio_views.portfolio, name="portfolio"),
     path('contact/', core_views.contact, name="contact"),
     path('admin/', admin.site.urls),
-    path('analytics/', include('analytics.urls')),  # Incluye las rutas de 'analytics'
+    #path('analytics/', include('analytics.urls')),  # Incluye las rutas de 'analytics'
+    path('analytics/', views.analisis_nicap, name='analytics'),
+    path('descargar-csv/', views.descargar_csv, name='descargar_csv'),
 ]
 
 if settings.DEBUG:
