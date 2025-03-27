@@ -17,11 +17,9 @@ maxminddb
 mccabe
 multidict
 packaging
-pandas
 pillow
 pipenv
 platformdirs
-plotly
 pylint
 pylint-celery
 pylint-django
