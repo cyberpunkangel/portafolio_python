@@ -21,17 +21,12 @@ from portfolio import views as portfolio_views
 
 from django.conf import settings
 
-from analytics.NICAP import views
-
 urlpatterns = [
     path('', core_views.home, name="home"),
     path('about-me/', core_views.about, name="about"),
     path('portfolio/', portfolio_views.portfolio, name="portfolio"),
     path('contact/', core_views.contact, name="contact"),
     path('admin/', admin.site.urls),
-    #path('analytics/', include('analytics.urls')),  # Incluye las rutas de 'analytics'
-    path('analytics/', views.analisis_nicap, name='analytics'),
-    path('descargar-csv/', views.descargar_csv, name='descargar_csv'),
 ]
 
 if settings.DEBUG:
